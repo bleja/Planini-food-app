@@ -1,141 +1,130 @@
-import React from 'react';
-import './AddMeal.scss';
+import React, { useState } from "react";
+import "./AddMeal.scss";
 
+const AddMeal = ({ onAdd }) => {
+  const [name, setName] = useState("");
+  const [ingredients, setIngredients] = useState([
+    { ingredient: "", quantity: "" },
+    { ingredient: "", quantity: "" },
+    { ingredient: "", quantity: "" },
+    { ingredient: "", quantity: "" },
+    { ingredient: "", quantity: "" },
+  ]);
+  const [recipe, setRecipe] = useState("");
+  const [link, setLink] = useState("");
 
-const AddMeal = () => {
-  
-    const AddIngredientField = () => {
-        console.log("klikniete");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const newMeal = {
+      name: name,
+      ingredients: ingredients,
+      recipe: recipe,
+      link: link,
+    };
 
-        const append = document.getElementById("ingredientsList");
-        
+    console.log(newMeal);
 
-        const newIngredient = () => {
-          return (
-            <label>
-                <input 
-                    className="Ingredient"
-                    type="text"
-                    placeholder="Składnik"                
-                />
-                <input 
-                    className="Quantity"
-                    type="text"
-                    placeholder="Ilość"
-                    tooltip="hej"                
-                /> 
-                gr
-            </label>
-          )
-        }
-        append.appendChild(newIngredient);
-    
-    }
+    fetch("http://localhost:3000/meals", {
+      method: "POST",
+      body: JSON.stringify(newMeal),
+      headers: {
+        "content-type": "Application/JSON",
+      },
+    })
+      .then((resp) => {
+        return resp.json();
+      })
+      .then((data) => {
+        onAdd(data);
+      });
+  };
 
-    return (
+  const saveIngredientName = (index, name) => {
+    const copyIngredients = [...ingredients];
+    copyIngredients[index].ingredient = name;
+    setIngredients(copyIngredients);
+  };
+
+  const saveIngredientQuantity = (index, quantity) => {
+    const copyIngredients = [...ingredients];
+    copyIngredients[index].quantity = quantity;
+    setIngredients(copyIngredients);
+  };
+
+  const AddIngredientField = (ingredient) => {
+    //   e.preventDefault(); jak to dopisuje to mi wywala bledy, cos tu nie gra
+    setIngredients([
+      ...ingredients,
+      ingredient,
+    ]); /* dodaje mi nowe pole, ale nie ma ono takiej funkcjonalnosci co poprzednie input fields, po zapisie dodaje Class zamiast obiektu - czemu? */
+  };
+
+  return (
     <div className="AddMeal">
-        <form className="Header">
-            <h2>Dodawanie przepisu</h2>
-            <label>
+      <form className="Header" onSubmit={handleSubmit}>
+        <h2>Dodawanie przepisu</h2>
+        <label>
+          <input
+            className="Form-Width"
+            type="text"
+            name="name"
+            placeholder="Nazwa przepisu"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+        </label>
+        <div className="ingredients-list">
+          {ingredients.map((ingredient, index) => {
+            return (
+              <p key={index}>
                 <input
-                className="Form-Width"
-                type="text"
-                placeholder="Nazwa przepisu"                
-                />            
-            </label>
-            
-            <span id="ingredientsList">
-            <label>
-                <input 
-                    className="Ingredient"
-                    type="text"
-                    placeholder="Składnik"                
-                    />
-                <input 
-                    className="Quantity"
-                    type="text"
-                    placeholder="Ilość"
-                    tooltip="hej"                
-                    /> 
-                gr
-            </label>
-            <label>
-                <input 
-                    className="Ingredient"
-                    type="text"
-                    placeholder="Składnik"                
-                    />
-                <input 
-                    className="Quantity"
-                    type="text"
-                    placeholder="Ilość"                
-                    /> 
-                gr
-            </label>
-            <label>
-                <input 
-                    
-                    className="Ingredient"
-                    type="text"
-                    placeholder="Składnik"                
+                  className="Ingredient"
+                  type="text"
+                  name="ingredient"
+                  placeholder="Składnik"
+                  value={ingredient.name}
+                  onChange={(e) => saveIngredientName(index, e.target.value)}
                 />
-                <input 
-                    className="Quantity"
-                    type="text"
-                    placeholder="Ilość"                
-                /> 
-                gr
-            </label>
-            <label>
-                <input 
-                    className="Ingredient"
-                    type="text"
-                    placeholder="Składnik"                
+                <input
+                  className="Quantity"
+                  type="text"
+                  name="quantity"
+                  placeholder="Ilość"
+                  value={ingredient.quantity}
+                  onChange={(e) =>
+                    saveIngredientQuantity(index, e.target.value)
+                  }
                 />
-                <input 
-                    className="Quantity"
-                    type="text"
-                    placeholder="Ilość"                
-                /> 
                 gr
-            </label>
-            <label>
-                <input 
-                    className="Ingredient"
-                    type="text"
-                    placeholder="Składnik"                
-                />
-                <input 
-                    className="Quantity"
-                    type="text"
-                    placeholder="Ilość"                
-                /> 
-                gr
-            </label>
-            </span>
-
-            <button className="btn-small btn-plus" onClick={AddIngredientField}>+</button>
-         
-            <textarea
-                className="Form-Width"
-                type="text"
-                placeholder="Treść przepisu"                
-            />
-
-            <input
-                className="Form-Width"
-                type="text"
-                placeholder="Link"                
-            />
-
-            <span>
-                {/* <button className="btn-small">Anuluj</button> */}
-                <button className="btn-small">Zapisz i zamknij</button>
-            </span>
-
-        </form>
+              </p>
+            );
+          })}
+        </div>
+        <button className="btn-small btn-plus" onClick={AddIngredientField}>
+          +
+        </button>
+        <textarea
+          className="Form-Width"
+          type="text"
+          placeholder="Treść przepisu"
+          value={recipe}
+          onChange={(e) => setRecipe(e.target.value)}
+        />
+        <input
+          className="Form-Width"
+          type="text"
+          placeholder="Link"
+          value={link}
+          onChange={(e) => setLink(e.target.value)}
+        />
+        {/* <span> */}
+        {/* <button className="btn-small">Anuluj</button> */}
+        {/* <button className="btn-small">Zapisz i zamknij</button> */}
+        {/* </span> */}
+        <input type="submit" className="btn-small" value="Zapisz" />
+      </form>
     </div>
   );
-}
+};
 
 export default AddMeal;

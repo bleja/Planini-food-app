@@ -1,0 +1,376 @@
+{
+  "meals": [
+    {
+      "name": "Zupa ogorkowa",
+      "ingredients": [
+        {
+          "ingredient": "ogórek",
+          "quantity": "200"
+        },
+        {
+          "ingredient": "śmietana",
+          "quantity": "100"
+        },
+        {
+          "ingredient": "woda",
+          "quantity": "1000"
+        },
+        {
+          "ingredient": "przyprawy",
+          "quantity": "20"
+        }
+      ],
+      "recipe": [
+        "Ogórki zetrzyj na tarce, wrzuć do wody i ugotuj"
+      ]
+    },
+    {
+      "name": "Zupa pomidorowa",
+      "ingredients": [
+        {
+          "ingredient": "pomidor",
+          "quantity": "200"
+        },
+        {
+          "ingredient": "woda",
+          "quantity": "200"
+        },
+        {
+          "ingredient": "koncentrat",
+          "quantity": "200"
+        }
+      ],
+      "recipe": [
+        "Pomidory zetrzyj na tarce, wrzuć do wody i ugotuj"
+      ]
+    },
+    {
+      "name": "Barszcz",
+      "ingredients": [
+        {
+          "ingredient": "buraki",
+          "quantity": "200"
+        },
+        {
+          "ingredient": "woda",
+          "quantity": "200"
+        },
+        {
+          "ingredient": "koncentrat",
+          "quantity": "200"
+        }
+      ],
+      "recipe": [
+        "Buraki zetrzyj na tarce, wrzuć do wody i ugotuj"
+      ]
+    },
+    {
+      "name": "chleb",
+      "ingredients": [
+        {
+          "ingredient": "skladnik",
+          "quantity": "200"
+        },
+        {
+          "ingredient": "skladnik",
+          "quantity": "200"
+        },
+        {
+          "ingredient": "skladnik",
+          "quantity": "200"
+        },
+        {
+          "ingredient": "",
+          "quantity": ""
+        },
+        {
+          "ingredient": "",
+          "quantity": ""
+        }
+      ],
+      "recipe": "hsdlkjshdklajh",
+      "link": "alkshdkajdh",
+      "id": 2
+    },
+    {
+      "name": "chleb",
+      "ingredients": [
+        {
+          "ingredient": "skladnik",
+          "quantity": "200"
+        },
+        {
+          "ingredient": "majja",
+          "quantity": "123"
+        },
+        {
+          "ingredient": "QKAHKSJBNA",
+          "quantity": "3455"
+        },
+        {
+          "ingredient": "",
+          "quantity": ""
+        },
+        {
+          "ingredient": "",
+          "quantity": ""
+        }
+      ],
+      "recipe": "przepis",
+      "link": "www.google.pl",
+      "id": 3
+    },
+    {
+      "name": "chleb",
+      "ingredients": [
+        {
+          "ingredient": "skladnik",
+          "quantity": "200"
+        },
+        {
+          "ingredient": "mąka",
+          "quantity": "200"
+        },
+        {
+          "ingredient": "skladniks",
+          "quantity": "23"
+        },
+        {
+          "ingredient": "",
+          "quantity": ""
+        },
+        {
+          "ingredient": "",
+          "quantity": ""
+        }
+      ],
+      "recipe": "to jest przepis na chleb",
+      "link": "www.atolinkdochleba.pl",
+      "id": 5
+    },
+    {
+      "name": "Jajecznica",
+      "ingredients": [
+        {
+          "ingredient": "Jajko",
+          "quantity": "150"
+        },
+        {
+          "ingredient": "Szczypiorek",
+          "quantity": "10"
+        },
+        {
+          "ingredient": "Masło",
+          "quantity": "10"
+        },
+        {
+          "ingredient": "Sól",
+          "quantity": "5"
+        },
+        {
+          "ingredient": "Pieprz",
+          "quantity": "5"
+        },
+        {
+          "dispatchConfig": null,
+          "_targetInst": null,
+          "_dispatchListeners": null,
+          "_dispatchInstances": null,
+          "nativeEvent": null,
+          "type": null,
+          "target": null,
+          "eventPhase": null,
+          "bubbles": null,
+          "cancelable": null,
+          "defaultPrevented": null,
+          "isTrusted": null,
+          "view": null,
+          "detail": null,
+          "screenX": null,
+          "screenY": null,
+          "clientX": null,
+          "clientY": null,
+          "pageX": null,
+          "pageY": null,
+          "ctrlKey": null,
+          "shiftKey": null,
+          "altKey": null,
+          "metaKey": null,
+          "button": null,
+          "buttons": null
+        }
+      ],
+      "recipe": "",
+      "link": "",
+      "id": 6
+    },
+    {
+      "name": "Jajecznica",
+      "ingredients": [
+        {
+          "ingredient": "Jajko",
+          "quantity": "150"
+        },
+        {
+          "ingredient": "Szczypiorek",
+          "quantity": "10"
+        },
+        {
+          "ingredient": "Masło",
+          "quantity": "10"
+        },
+        {
+          "ingredient": "Sól",
+          "quantity": "5"
+        },
+        {
+          "ingredient": "Pieprz",
+          "quantity": "5"
+        },
+        {
+          "dispatchConfig": null,
+          "_targetInst": null,
+          "_dispatchListeners": null,
+          "_dispatchInstances": null,
+          "nativeEvent": null,
+          "type": null,
+          "target": null,
+          "eventPhase": null,
+          "bubbles": null,
+          "cancelable": null,
+          "defaultPrevented": null,
+          "isTrusted": null,
+          "view": null,
+          "detail": null,
+          "screenX": null,
+          "screenY": null,
+          "clientX": null,
+          "clientY": null,
+          "pageX": null,
+          "pageY": null,
+          "ctrlKey": null,
+          "shiftKey": null,
+          "altKey": null,
+          "metaKey": null,
+          "button": null,
+          "buttons": null
+        },
+        {
+          "dispatchConfig": null,
+          "_targetInst": null,
+          "_dispatchListeners": null,
+          "_dispatchInstances": null,
+          "nativeEvent": null,
+          "type": null,
+          "target": null,
+          "eventPhase": null,
+          "bubbles": null,
+          "cancelable": null,
+          "defaultPrevented": null,
+          "isTrusted": null,
+          "view": null,
+          "detail": null,
+          "screenX": null,
+          "screenY": null,
+          "clientX": null,
+          "clientY": null,
+          "pageX": null,
+          "pageY": null,
+          "ctrlKey": null,
+          "shiftKey": null,
+          "altKey": null,
+          "metaKey": null,
+          "button": null,
+          "buttons": null
+        }
+      ],
+      "recipe": "",
+      "link": "",
+      "id": 7
+    },
+    {
+      "name": "Jajecznica",
+      "ingredients": [
+        {
+          "ingredient": "Jajko",
+          "quantity": "150"
+        },
+        {
+          "ingredient": "Szczypiorek",
+          "quantity": "10"
+        },
+        {
+          "ingredient": "Masło",
+          "quantity": "10"
+        },
+        {
+          "ingredient": "Sól",
+          "quantity": "5"
+        },
+        {
+          "ingredient": "Pieprz",
+          "quantity": "5"
+        },
+        {
+          "dispatchConfig": null,
+          "_targetInst": null,
+          "_dispatchListeners": null,
+          "_dispatchInstances": null,
+          "nativeEvent": null,
+          "type": null,
+          "target": null,
+          "eventPhase": null,
+          "bubbles": null,
+          "cancelable": null,
+          "defaultPrevented": null,
+          "isTrusted": null,
+          "view": null,
+          "detail": null,
+          "screenX": null,
+          "screenY": null,
+          "clientX": null,
+          "clientY": null,
+          "pageX": null,
+          "pageY": null,
+          "ctrlKey": null,
+          "shiftKey": null,
+          "altKey": null,
+          "metaKey": null,
+          "button": null,
+          "buttons": null
+        },
+        {
+          "dispatchConfig": null,
+          "_targetInst": null,
+          "_dispatchListeners": null,
+          "_dispatchInstances": null,
+          "nativeEvent": null,
+          "type": null,
+          "target": null,
+          "eventPhase": null,
+          "bubbles": null,
+          "cancelable": null,
+          "defaultPrevented": null,
+          "isTrusted": null,
+          "view": null,
+          "detail": null,
+          "screenX": null,
+          "screenY": null,
+          "clientX": null,
+          "clientY": null,
+          "pageX": null,
+          "pageY": null,
+          "ctrlKey": null,
+          "shiftKey": null,
+          "altKey": null,
+          "metaKey": null,
+          "button": null,
+          "buttons": null
+        }
+      ],
+      "recipe": "Masło podgrzej na patelni, wrzuć szczypiorek, wbij jajka, na koniec dopraw do smaku solą i pieprzem.",
+      "link": "www.jajecznica.pl",
+      "id": 8
+    }
+  ]
+}

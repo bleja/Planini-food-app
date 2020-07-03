@@ -41,3 +41,8 @@ textarea {
 .Quantity {
     width: 100px;
 }
+
+.ingredients-list {
+    display: flex;
+    flex-direction: column;
+}
