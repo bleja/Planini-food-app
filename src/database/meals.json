@@ -72,62 +72,6 @@
           "quantity": "200"
         },
         {
-          "ingredient": "skladnik",
-          "quantity": "200"
-        },
-        {
-          "ingredient": "skladnik",
-          "quantity": "200"
-        },
-        {
-          "ingredient": "",
-          "quantity": ""
-        },
-        {
-          "ingredient": "",
-          "quantity": ""
-        }
-      ],
-      "recipe": "hsdlkjshdklajh",
-      "link": "alkshdkajdh",
-      "id": 2
-    },
-    {
-      "name": "chleb",
-      "ingredients": [
-        {
-          "ingredient": "skladnik",
-          "quantity": "200"
-        },
-        {
-          "ingredient": "majja",
-          "quantity": "123"
-        },
-        {
-          "ingredient": "QKAHKSJBNA",
-          "quantity": "3455"
-        },
-        {
-          "ingredient": "",
-          "quantity": ""
-        },
-        {
-          "ingredient": "",
-          "quantity": ""
-        }
-      ],
-      "recipe": "przepis",
-      "link": "www.google.pl",
-      "id": 3
-    },
-    {
-      "name": "chleb",
-      "ingredients": [
-        {
-          "ingredient": "skladnik",
-          "quantity": "200"
-        },
-        {
           "ingredient": "mąka",
           "quantity": "200"
         },
@@ -170,34 +114,6 @@
         {
           "ingredient": "Pieprz",
           "quantity": "5"
-        },
-        {
-          "dispatchConfig": null,
-          "_targetInst": null,
-          "_dispatchListeners": null,
-          "_dispatchInstances": null,
-          "nativeEvent": null,
-          "type": null,
-          "target": null,
-          "eventPhase": null,
-          "bubbles": null,
-          "cancelable": null,
-          "defaultPrevented": null,
-          "isTrusted": null,
-          "view": null,
-          "detail": null,
-          "screenX": null,
-          "screenY": null,
-          "clientX": null,
-          "clientY": null,
-          "pageX": null,
-          "pageY": null,
-          "ctrlKey": null,
-          "shiftKey": null,
-          "altKey": null,
-          "metaKey": null,
-          "button": null,
-          "buttons": null
         }
       ],
       "recipe": "",
@@ -205,172 +121,163 @@
       "id": 6
     },
     {
-      "name": "Jajecznica",
+      "name": "Kotlety",
+      "ingredients": [
+        {
+          "ingredient": "Mięso",
+          "quantity": "500"
+        },
+        {
+          "ingredient": "Cebula",
+          "quantity": "20"
+        },
+        {
+          "ingredient": "Jajko",
+          "quantity": "50"
+        },
+        {
+          "ingredient": "Bułka tarta",
+          "quantity": "50"
+        },
+        {
+          "ingredient": "",
+          "quantity": ""
+        }
+      ],
+      "recipe": "Zrób kotlety i usmaż",
+      "link": "www.kotlety.pl",
+      "id": 10
+    },
+    {
+      "name": "Rosolek",
+      "ingredients": [
+        {
+          "ingredient": "woda",
+          "quantity": "1000"
+        },
+        {
+          "ingredient": "Mieso",
+          "quantity": "26262"
+        },
+        {
+          "ingredient": "sjshsjhs",
+          "quantity": "123"
+        },
+        {
+          "ingredient": "skdhskhd",
+          "quantity": "2233"
+        },
+        {
+          "ingredient": "kajskja",
+          "quantity": "200"
+        },
+        {
+          "quantity": "11919",
+          "ingredient": "dksdlkh"
+        },
+        {
+          "quantity": "122",
+          "ingredient": "khaskha"
+        },
+        {
+          "quantity": "122"
+        }
+      ],
+      "recipe": "przepis",
+      "link": "link",
+      "id": 28
+    },
+    {
+      "name": "Omlet",
       "ingredients": [
         {
           "ingredient": "Jajko",
           "quantity": "150"
         },
         {
-          "ingredient": "Szczypiorek",
-          "quantity": "10"
+          "ingredient": "Mąka",
+          "quantity": "20"
+        },
+        {
+          "ingredient": "Mleko",
+          "quantity": "150"
+        },
+        {
+          "ingredient": "Cukier",
+          "quantity": "20"
         },
         {
           "ingredient": "Masło",
           "quantity": "10"
+        }
+      ],
+      "recipe": "Zrób omleta ;)",
+      "link": "www.omlet.pl",
+      "id": 48
+    },
+    {
+      "name": "chleb",
+      "ingredients": [
+        {
+          "ingredient": "skladnik",
+          "quantity": "200"
         },
         {
-          "ingredient": "Sól",
-          "quantity": "5"
+          "ingredient": "mąka",
+          "quantity": "200"
         },
         {
-          "ingredient": "Pieprz",
-          "quantity": "5"
+          "ingredient": "Jajko",
+          "quantity": "23"
         },
         {
-          "dispatchConfig": null,
-          "_targetInst": null,
-          "_dispatchListeners": null,
-          "_dispatchInstances": null,
-          "nativeEvent": null,
-          "type": null,
-          "target": null,
-          "eventPhase": null,
-          "bubbles": null,
-          "cancelable": null,
-          "defaultPrevented": null,
-          "isTrusted": null,
-          "view": null,
-          "detail": null,
-          "screenX": null,
-          "screenY": null,
-          "clientX": null,
-          "clientY": null,
-          "pageX": null,
-          "pageY": null,
-          "ctrlKey": null,
-          "shiftKey": null,
-          "altKey": null,
-          "metaKey": null,
-          "button": null,
-          "buttons": null
+          "ingredient": "skladnik",
+          "quantity": "150"
         },
         {
-          "dispatchConfig": null,
-          "_targetInst": null,
-          "_dispatchListeners": null,
-          "_dispatchInstances": null,
-          "nativeEvent": null,
-          "type": null,
-          "target": null,
-          "eventPhase": null,
-          "bubbles": null,
-          "cancelable": null,
-          "defaultPrevented": null,
-          "isTrusted": null,
-          "view": null,
-          "detail": null,
-          "screenX": null,
-          "screenY": null,
-          "clientX": null,
-          "clientY": null,
-          "pageX": null,
-          "pageY": null,
-          "ctrlKey": null,
-          "shiftKey": null,
-          "altKey": null,
-          "metaKey": null,
-          "button": null,
-          "buttons": null
+          "ingredient": "skladnik",
+          "quantity": "200"
+        },
+        {
+          "ingredient": "",
+          "quantity": ""
         }
       ],
       "recipe": "",
       "link": "",
-      "id": 7
+      "id": 49
     },
     {
-      "name": "Jajecznica",
+      "name": "chleb",
       "ingredients": [
         {
+          "ingredient": "skladnik",
+          "quantity": "200"
+        },
+        {
+          "ingredient": "mąka",
+          "quantity": "200"
+        },
+        {
           "ingredient": "Jajko",
+          "quantity": "23"
+        },
+        {
+          "ingredient": "skladnik",
           "quantity": "150"
         },
         {
-          "ingredient": "Szczypiorek",
-          "quantity": "10"
+          "ingredient": "skladnik",
+          "quantity": "200"
         },
         {
-          "ingredient": "Masło",
-          "quantity": "10"
-        },
-        {
-          "ingredient": "Sól",
-          "quantity": "5"
-        },
-        {
-          "ingredient": "Pieprz",
-          "quantity": "5"
-        },
-        {
-          "dispatchConfig": null,
-          "_targetInst": null,
-          "_dispatchListeners": null,
-          "_dispatchInstances": null,
-          "nativeEvent": null,
-          "type": null,
-          "target": null,
-          "eventPhase": null,
-          "bubbles": null,
-          "cancelable": null,
-          "defaultPrevented": null,
-          "isTrusted": null,
-          "view": null,
-          "detail": null,
-          "screenX": null,
-          "screenY": null,
-          "clientX": null,
-          "clientY": null,
-          "pageX": null,
-          "pageY": null,
-          "ctrlKey": null,
-          "shiftKey": null,
-          "altKey": null,
-          "metaKey": null,
-          "button": null,
-          "buttons": null
-        },
-        {
-          "dispatchConfig": null,
-          "_targetInst": null,
-          "_dispatchListeners": null,
-          "_dispatchInstances": null,
-          "nativeEvent": null,
-          "type": null,
-          "target": null,
-          "eventPhase": null,
-          "bubbles": null,
-          "cancelable": null,
-          "defaultPrevented": null,
-          "isTrusted": null,
-          "view": null,
-          "detail": null,
-          "screenX": null,
-          "screenY": null,
-          "clientX": null,
-          "clientY": null,
-          "pageX": null,
-          "pageY": null,
-          "ctrlKey": null,
-          "shiftKey": null,
-          "altKey": null,
-          "metaKey": null,
-          "button": null,
-          "buttons": null
+          "ingredient": "mąka",
+          "quantity": "200"
         }
       ],
-      "recipe": "Masło podgrzej na patelni, wrzuć szczypiorek, wbij jajka, na koniec dopraw do smaku solą i pieprzem.",
-      "link": "www.jajecznica.pl",
-      "id": 8
+      "recipe": "dlsjdllhdsl;h",
+      "link": "www.cjelp.pl",
+      "id": 50
     }
   ]
 }

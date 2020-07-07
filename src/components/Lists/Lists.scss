@@ -1,0 +1,8 @@
+@import "../../index.scss";
+
+.shopping-list {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    font-size: $font-size-base*2;
+}

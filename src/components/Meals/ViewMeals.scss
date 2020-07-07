@@ -1,13 +1,18 @@
 @import "../../index.scss";
 
-// .ViewMeals {
-//     width: 60vw;
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: center;
-//     align-items: center;
-// }
+.ViewMeals {
+    max-width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
-// // .ShowTiles {
-    
-// // }
+.meal-tile {
+    width: 300px;
+    height: 150px;
+    border: 1px solid gray;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}

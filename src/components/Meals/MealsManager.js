@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import AddMeal from "./AddMeal.js";
 import ViewMeals from "./ViewMeals";
 import Plans from "./../Plans/Plans";
-import test from "./../Plans/test";
+// import test from "./../Plans/test";
 import "./MealsManager.scss";
 
-const MealsManager = ({ onAdd }) => {
+const MealsManager = () => {
   const [meals, setMeals] = useState([]);
 
   const handleAdd = (meal) => {
@@ -13,7 +13,7 @@ const MealsManager = ({ onAdd }) => {
   };
 
   const getDataFromApi = () => {
-    fetch("http://localhost:3000/meals")
+    fetch("http://localhost:3011/meals")
       .then((response) => response.json())
       .then((data) => {
         setMeals(data);
@@ -29,7 +29,7 @@ const MealsManager = ({ onAdd }) => {
     <>
       <div className="MealsComponent">
         <AddMeal onAdd={handleAdd} />
-        <ViewMeals meal={test} />
+        <ViewMeals />
       </div>
     </>
   );

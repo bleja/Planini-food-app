@@ -4,6 +4,7 @@
   height: 50vh;
   max-width: 85vw;
   margin: 0 auto;
+  margin-left: 40px;
   display: flex;
   align-items: center;
   // justify-content: center;
@@ -20,10 +21,12 @@
     width: 100%;
     margin-left: 20px;
     margin-top: 10px;
+    font-size: $font-size-base*1,5;
   }
   label {
     margin-top: 20px;
     font-weight: 800;
+    font-size: $font-size-base*2;
   }
 }
 

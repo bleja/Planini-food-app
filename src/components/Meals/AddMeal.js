@@ -15,7 +15,7 @@ const AddMeal = ({ onAdd }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const newMeal = {
+    const newMeal = { 
       name: name,
       ingredients: ingredients,
       recipe: recipe,
@@ -24,7 +24,7 @@ const AddMeal = ({ onAdd }) => {
 
     console.log(newMeal);
 
-    fetch("http://localhost:3000/meals", {
+    fetch("http://localhost:3011/meals", {
       method: "POST",
       body: JSON.stringify(newMeal),
       headers: {
@@ -51,12 +51,21 @@ const AddMeal = ({ onAdd }) => {
     setIngredients(copyIngredients);
   };
 
-  const AddIngredientField = (ingredient) => {
-    //   e.preventDefault(); jak to dopisuje to mi wywala bledy, cos tu nie gra
-    setIngredients([
-      ...ingredients,
-      ingredient,
-    ]); /* dodaje mi nowe pole, ale nie ma ono takiej funkcjonalnosci co poprzednie input fields, po zapisie dodaje Class zamiast obiektu - czemu? */
+  // const AddIngredientField = (ingredientName, ingredientQuantity) => {
+  //   //   e.preventDefault(); jak to dopisuje to mi wywala bledy, cos tu nie gra
+  //   const newIngredient = {
+  //     ingredient: ingredientName,
+  //     quantity: ingredientQuantity,
+  //   };
+  //   setIngredients([
+  //     ...ingredients,
+  //     newIngredient,
+  //   ]); /* dodaje mi nowe pole, ale nie ma ono takiej funkcjonalnosci co poprzednie input fields, po zapisie dodaje Class zamiast obiektu - czemu? */
+  // };
+
+  const AddIngredientField = () => {
+    setIngredients([...ingredients, {ingredient:"", quantity:""}]);
+    console.log(ingredients);
   };
 
   return (
@@ -76,33 +85,43 @@ const AddMeal = ({ onAdd }) => {
         <div className="ingredients-list">
           {ingredients.map((ingredient, index) => {
             return (
-              <p key={index}>
-                <input
-                  className="Ingredient"
-                  type="text"
-                  name="ingredient"
-                  placeholder="Składnik"
-                  value={ingredient.name}
-                  onChange={(e) => saveIngredientName(index, e.target.value)}
-                />
-                <input
-                  className="Quantity"
-                  type="text"
-                  name="quantity"
-                  placeholder="Ilość"
-                  value={ingredient.quantity}
-                  onChange={(e) =>
-                    saveIngredientQuantity(index, e.target.value)
-                  }
-                />
-                gr
-              </p>
+              <>
+                <p key={index}>
+                  <input
+                    className="Ingredient"
+                    type="text"
+                    name="ingredient"
+                    placeholder="Składnik"
+                    value={ingredient.name}
+                    onChange={(e) => saveIngredientName(index, e.target.value)}
+                  />
+                  <input
+                    className="Quantity"
+                    type="text"
+                    name="quantity"
+                    placeholder="Ilość"
+                    value={ingredient.quantity}
+                    onChange={(e) =>
+                      saveIngredientQuantity(index, e.target.value)
+                    }
+                  />
+                  gr
+                </p>
+              </>
             );
           })}
+          <button
+            className="btn-small btn-plus"
+            onClick={(e) =>
+              // AddIngredientField(ingredient.name, ingredient.quantity) =>to bylo dobrze wewnatrz mapa
+
+              AddIngredientField()
+            }
+          >
+            +
+          </button>
         </div>
-        <button className="btn-small btn-plus" onClick={AddIngredientField}>
-          +
-        </button>
+
         <textarea
           className="Form-Width"
           type="text"
