@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useHistory } from "react";
 import "./Plans.scss";
 
 const Plans = ({onDone}) => {
@@ -49,7 +49,7 @@ const Plans = ({onDone}) => {
   });
 
   const fetchAllMeals = () => {
-    fetch("http://localhost:3011/meals")
+    fetch("http://localhost:8000/meals")
       .then((response) => response.json())
       .then((data) => {
         setAllMeals(data);
@@ -85,12 +85,21 @@ const Plans = ({onDone}) => {
           ...plan[day]["snack"],
           ...plan[day]["dinner"],
         ];
+
       }
+      
+      // handleRedirect();
 
       console.log(ingredientsArray);
       onDone(ingredientsArray);
       
     };
+    
+    // const handleRedirect = () => {
+    //   console.log("czy działa?")
+    //   // useHistory().push("/lists");
+    //   window.location.href = "/lists";
+    // }
 
     ///////////// tu ogarniam śniadania z calego tygodnia ///////////////
 
@@ -382,7 +391,7 @@ const Plans = ({onDone}) => {
 
     // to chcialam wrzucic do srodka kazdego selecta, ale nie dzialalo, wiec wrzucilam calosc zamiast zmiennej
     // let mealsList = allMeals.map((element, i) => {
-    //   return <option key={i}>{element.name}</option>;
+    //  return <option key={i}>{element.name}</option>;
     // });
 
     return (
@@ -647,6 +656,11 @@ const Plans = ({onDone}) => {
         <button className="btn-small" onClick={handleList}>
           Lista zakupów
         </button>
+
+        {/* <Link to="/lists" className="btn-small" onClick={handleList}>
+          Lista zakupów
+        </Link> */}
+
       </div>
     );
   } else {

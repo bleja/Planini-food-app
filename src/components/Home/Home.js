@@ -27,13 +27,13 @@ const Home = () => {
       <div className="home-style">
         {/* <button className="btn-big"><a href="">Inspiracje</a></button> */}
         <button className="btn-big">
-          <a href="http://localhost:3000/#/meals">Dodaj posiłek</a>
+          <a href="http://localhost:8000/#/meals">Dodaj posiłek</a>
         </button>
         <button className="btn-big">
-          <a href="http://localhost:3000/#/plans">Zaplanuj tydzień</a>
+          <a href="http://localhost:8000/#/plans">Zaplanuj tydzień</a>
         </button>
         <button className="btn-big">
-          <a href="http://localhost:3000/#/lists">Lista zakupów</a>
+          <a href="http://localhost:8000/#/lists">Lista zakupów</a>
         </button>
       </div>
     );
