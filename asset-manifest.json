@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Planini-food-app/static/css/main.68a01198.chunk.css",
+    "main.js": "/Planini-food-app/static/js/main.52d9a955.chunk.js",
+    "main.js.map": "/Planini-food-app/static/js/main.52d9a955.chunk.js.map",
+    "runtime-main.js": "/Planini-food-app/static/js/runtime-main.66fd0f15.js",
+    "runtime-main.js.map": "/Planini-food-app/static/js/runtime-main.66fd0f15.js.map",
+    "static/js/2.8f7bd5c7.chunk.js": "/Planini-food-app/static/js/2.8f7bd5c7.chunk.js",
+    "static/js/2.8f7bd5c7.chunk.js.map": "/Planini-food-app/static/js/2.8f7bd5c7.chunk.js.map",
+    "index.html": "/Planini-food-app/index.html",
+    "precache-manifest.782294a0ef37b75f5c7b4087ccc5f0a0.js": "/Planini-food-app/precache-manifest.782294a0ef37b75f5c7b4087ccc5f0a0.js",
+    "service-worker.js": "/Planini-food-app/service-worker.js",
+    "static/css/main.68a01198.chunk.css.map": "/Planini-food-app/static/css/main.68a01198.chunk.css.map",
+    "static/js/2.8f7bd5c7.chunk.js.LICENSE.txt": "/Planini-food-app/static/js/2.8f7bd5c7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.66fd0f15.js",
+    "static/js/2.8f7bd5c7.chunk.js",
+    "static/css/main.68a01198.chunk.css",
+    "static/js/main.52d9a955.chunk.js"
+  ]
+}
